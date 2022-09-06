@@ -7,6 +7,7 @@ ruby "3.1.1"
 gem "rails", "~> 7.0.3"
 
 gem 'bootstrap-sass'
+gem 'bootstrap'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -45,6 +46,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "bcrypt"
 gem "byebug"
+gem 'rails-controller-testing'
 # Use Sass to process CSS
 gem "sassc-rails"
 
