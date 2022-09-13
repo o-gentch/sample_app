@@ -7,7 +7,6 @@ ruby "3.1.1"
 gem "rails", "~> 7.0.3"
 
 gem 'bootstrap-sass'
-gem 'bootstrap'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -56,6 +55,7 @@ gem "sassc-rails"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'pry'
 end
 
 group :development do
