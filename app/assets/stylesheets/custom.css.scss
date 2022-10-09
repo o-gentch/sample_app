@@ -50,12 +50,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em; 
-    letter-spacing: -1px; 
-    margin-bottom: 30px; 
-    text-align: center; 
+    text-align: end;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
     font-weight: normal;
-    color: rgb(31, 33, 122);
+    color: #a7a7a7;
+}
+
+.update {
+    text-align: center;
 }
 
 p {
@@ -214,3 +218,101 @@ input {
     } 
 }
 
+/* микросообщения */
+
+.microposts { 
+    display: grid;
+    list-style: none; 
+    padding: 0;
+    li {
+        padding: 10px 0;
+        border-top: 1px solid #e8e8e8;
+    }
+
+    .user { 
+        margin-top: 5em;
+        padding-top: 0;
+    } 
+
+    .content {
+        display: block; 
+        margin-left: 60px; 
+        img {
+            display: block; 
+            padding: 5px 0;
+        } 
+    }
+
+    .timestamp {
+        color: $gray-light; 
+        display: block;
+        margin-left: 60px;
+    } 
+
+    .gravatar {
+        float: left; 
+        margin-right: 10px;
+        margin-top: 5px;
+    } 
+}
+
+aside { 
+    textarea {
+        height: 100px;
+        margin-bottom: 5px;
+    }   
+} 
+
+span.picture { 
+    margin-top: 10px; 
+    input {
+        border: 0;
+    }
+} 
+
+
+/*=== 4. Main Form ===*/
+.login-form-1 {
+    max-width: 250px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .main-login-form {
+    position: relative;
+  }
+  .login-form-1 .form-control {
+    border: 0;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+    background: transparent;
+    color: #555555;
+    padding: 7px 0;
+    font-weight: bold;
+    height:auto;
+  }
+  .login-form-1 .form-control::-webkit-input-placeholder {
+    color: #999999;
+  }
+  .login-form-1 .form-control:-moz-placeholder,
+  .login-form-1 .form-control::-moz-placeholder,
+  .login-form-1 .form-control:-ms-input-placeholder {
+    color: #999999;
+  }
+  .login-form-1 .form-group {
+    margin-bottom: 0;
+    border-bottom: 2px solid #efefef;
+    padding-right: 20px;
+    position: relative;
+  }
+  .login-form-1 .form-group:last-child {
+    border-bottom: 0;
+  }
+  .login-group {
+    background: #ffffff;
+    color: #999999;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  .login-group-checkbox {
+    padding: 5px 0;
+  }
